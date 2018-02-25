@@ -4,7 +4,7 @@ console.log('Rob is here');
 
 
 document.querySelector('.mainBttn').addEventListener("click", captureCelsius);
-//document.querySelector('.mainBttn').addEventListener("click", output);
+document.querySelector('.mainBttn').addEventListener("click", output);
 
 function captureCelsius() {
 	var temperature = document.querySelector('#celsiusInput').value
@@ -15,6 +15,8 @@ function captureCelsius() {
 	if (farenheit > 60)
 		{
 			document.querySelector('body').style.backgroundImage = "url('./images/volcano.jpg')";
+			document.querySelector('h1').style.color = 'white';
+			document.querySelector('h4').style.color ='white';
 
 		}
 
@@ -23,7 +25,7 @@ function captureCelsius() {
 		document.querySelector('body').style.backgroundColor = "grey"; 
 	}
 
-	else (farenheit < 30) 
+	else
 	{
 		document.querySelector('body').style.backgroundImage = "url('./images/iceberg.jpg')";
 		
@@ -31,14 +33,14 @@ function captureCelsius() {
 	
 };
 
-/*
+
 function output() {
 	var temperature = document.querySelector("#celsiusInput").value;
 	var farenheit = (temperature * 1.8) + 32;
 	document.querySelector("h4").innerHTML = "The temperature in Farenheit is";
 	document.querySelector("#celsiusInput").innerHTML = farenheit;
-	//document.querySelector(".result").innerHTML = farenheit;
+	return farenheit;
 }; 
 
 
-*/
+
