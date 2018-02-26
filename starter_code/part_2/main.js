@@ -15,6 +15,7 @@ function captureCelsius() {
 	if (farenheit > 60)
 		{
 			document.querySelector('body').style.backgroundImage = "url('./images/volcano.jpg')";
+			document.body.style.backgroundSize = "cover";
 			document.querySelector('h1').style.color = 'white';
 			document.querySelector('h4').style.color ='white';
 
@@ -28,6 +29,8 @@ function captureCelsius() {
 	else
 	{
 		document.querySelector('body').style.backgroundImage = "url('./images/iceberg.jpg')";
+		document.body.style.backgroundSize = "cover";
+		
 		
 	}
 	
